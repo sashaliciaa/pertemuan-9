@@ -1,5 +1,27 @@
 <html>
-   
+   <body>
+    <p><script language="javascript">
+        <!--
+        function hitung()
+        {
+            var bil1=parseFloat (document.tform.uts1.value);
+            if (isNaN(bil1))
+                bil1=0.0;
+            var bil2=parseFloat (document.tform.uas1.value);
+            if (isNaN(bil2))
+                bil2=0.0;
+            var bil3=parseFloat (document.tform.absensi1.value);
+            if (isNaN(bil3))
+                bil3=0.0;
+            var bil4=parseFloat (document.tform.tugas1.value);
+            if (isNaN(bil4))
+                bil4=0.0;
+            var ip      = "";
+            var ket     = "";
+            var Nilai=(((bil1*10)/100) + ((20*bil2)/100) + ((30*bil3)/100)+((40*bil4)/100))
+            if((Nilai > 80) && (Nilai <=100))
+            {}
+        </script>
     <table border="1" align="center"width="70%">
 <FORM NAME="tform">   
     <tr>
@@ -104,6 +126,10 @@ Nama            :<input type="text" size="30" name="nama">
         <input type="reset" value="Ulang">
         </td>
     </tr>
+    <tr align="center">
+        <td colspan="4" width="50%" align="center">Indeks Prestasi <input type="text" size="10" name="ipk">Keteragan<input type="text" size="20" name="ket"></td>
+    </tr>
     </FORM>
 </table>
+</body>
 </html>
